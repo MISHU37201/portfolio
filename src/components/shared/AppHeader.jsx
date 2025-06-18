@@ -45,23 +45,16 @@ const AppHeader = () => {
 			<div className="z-10 max-w-screen-lg xl:max-w-screen-xl block sm:flex sm:justify-between sm:items-center py-6">
 				{/* Header menu links and small screen hamburger menu */}
 				<div className="flex justify-between items-center px-4 sm:px-0">
-					<div>
-						<Link to="/">
-							{activeTheme === 'dark' ? (
-								<img
-									src={logoDark}
-									className="w-36"
-									alt="Dark Logo"
-								/>
-							) : (
-								<img
-									src={logoLight}
-									className="w-36"
-									alt="Dark Logo"
-								/>
-							)}
-						</Link>
-					</div>
+				<div>
+					<Link to="/">
+						{activeTheme === 'light' ? (
+							<h1 className="text-white text-2xl font-bold">{`<Rimsha />`}</h1>
+						) : (
+							<h1 className="text-gray-900 text-2xl font-bold">{`<Rimsha />`}</h1>
+						)}
+					</Link>
+				</div>
+
 
 					{/* Theme switcher small screen */}
 					<div
@@ -69,7 +62,7 @@ const AppHeader = () => {
 						aria-label="Theme Switcher"
 						className="block sm:hidden ml-0 bg-primary-light dark:bg-ternary-dark p-3 shadow-sm rounded-xl cursor-pointer"
 					>
-						{activeTheme === 'dark' ? (
+						{activeTheme === 'light' ? (
 							<FiMoon className="text-ternary-dark hover:text-gray-400 dark:text-ternary-light dark:hover:text-primary-light text-xl" />
 						) : (
 							<FiSun className="text-gray-200 hover:text-gray-50 text-xl" />
