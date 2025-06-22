@@ -8,10 +8,6 @@ import canva from '../../assets/canva.png';
 import git from '../../assets/git.png';
 import javascript from '../../assets/javascript.png';
 
-
-
-
-
 const skills = [
   { name: 'Tailwind CSS', logo: tailwind },
   { name: 'React', logo: react },
@@ -35,28 +31,26 @@ const SkillLogos = () => {
       </h2>
 
       <div className="w-full overflow-hidden group">
-  <div className="marquee">
-    {skills.map((skill, index) => (
-      <div
-        key={index}
-        className="flex flex-col items-center min-w-[120px]"
-      >
-        <img
-          src={skill.logo}
-          alt={skill.name}
-          className="w-12 h-12 object-contain"
-        />
-        <p className="text-sm mt-2 text-center text-primary-dark dark:text-primary-light">
-          {skill.name}
-        </p>
+        <div className="marquee">
+          {skills.map((skill, index) => (
+            <div
+              key={index}
+              className="flex flex-col items-center min-w-[120px]"
+            >
+              <img
+                src={skill.logo}
+                alt={skill.name}
+                className="w-12 h-12 object-contain"
+              />
+              <p className="text-sm mt-2 text-center text-primary-dark dark:text-primary-light">
+                {skill.name}
+              </p>
+            </div>
+          ))}
+        </div>
       </div>
-    ))}
-  </div>
-      </div>
-      </div>
-
+    </div>
   );
 };
 
 export default SkillLogos;
-

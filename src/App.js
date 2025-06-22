@@ -6,17 +6,16 @@ import AppFooter from './components/shared/AppFooter';
 import AppHeader from './components/shared/AppHeader';
 import './css/App.css';
 import UseScrollToTop from './hooks/useScrollToTop';
-
+import { HashLink } from 'react-router-hash-link';
 const About = lazy(() => import('./pages/AboutMe'));
 const Contact = lazy(() => import('./pages/Contact.jsx'));
 const Home = lazy(() => import('./pages/Home'));
 const Projects = lazy(() => import('./pages/Projects'));
 const ProjectSingle = lazy(() => import('./pages/ProjectSingle.jsx'));
-const Skills = lazy(() => import('./components/skill/Skills.jsx') )
-
+const Skills = lazy(() => import('./components/skill/Skills.jsx'));
 
 function App() {
-	return (
+  return (
     <AnimatePresence>
       <div className=" bg-secondary-light dark:bg-primary-dark transition duration-300">
         <Router>
@@ -32,7 +31,10 @@ function App() {
               />
 
               <Route path="about" element={<About />} />
-              <Route path="skill" element={<Skills />} />
+              {/* <a href="#skills">
+                Skills
+              </a> */}
+
               <Route path="contact" element={<Contact />} />
             </Routes>
           </Suspense>
