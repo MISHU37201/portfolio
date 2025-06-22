@@ -12,7 +12,7 @@ const Contact = lazy(() => import('./pages/Contact.jsx'));
 const Home = lazy(() => import('./pages/Home'));
 const Projects = lazy(() => import('./pages/Projects'));
 const ProjectSingle = lazy(() => import('./pages/ProjectSingle.jsx'));
-const SkillLogos = lazy(() => import('./components/skill/SkillLogos.jsx') )
+const Skills = lazy(() => import('./components/skill/Skills.jsx') )
 
 
 function App() {
@@ -32,7 +32,7 @@ function App() {
               />
 
               <Route path="about" element={<About />} />
-              {/* <Route path="skill" element={<SkillLogos />} /> */}
+              <Route path="skill" element={<Skills />} />
               <Route path="contact" element={<Contact />} />
             </Routes>
           </Suspense>
