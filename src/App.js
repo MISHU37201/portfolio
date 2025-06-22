@@ -32,7 +32,7 @@ function App() {
               />
 
               <Route path="about" element={<About />} />
-              <Route path="skill" element={<SkillLogos />} />
+              {/* <Route path="skill" element={<SkillLogos />} /> */}
               <Route path="contact" element={<Contact />} />
             </Routes>
           </Suspense>

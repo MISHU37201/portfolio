@@ -1,21 +1,26 @@
 import { FiPhone, FiMapPin, FiMail } from 'react-icons/fi';
 
 const contacts = [
-	{
-		id: 1,
-		name: 'Your Address, Your City, Your Country',
-		icon: <FiMapPin />,
-	},
-	{
-		id: 2,
-		name: 'email@domain.com',
-		icon: <FiMail />,
-	},
-	{
-		id: 3,
-		name: '555 8888 888',
-		icon: <FiPhone />,
-	},
+  {
+    id: 1,
+    name: 'Armour Officers Mess Near State Bank Mall, Road Rawalpindi',
+    icon: <FiMapPin />,
+  },
+  {
+    id: 2,
+    name: 'rimshasaqlain08@gmail.com',
+    icon: <FiMail />,
+  },
+  {
+    id: 3,
+    name: '0348-1722257',
+    icon: <FiPhone />,
+  },
+  {
+    id: 3,
+    name: '0321-5835886',
+    icon: <FiPhone />,
+  },
 ];
 
 const ContactDetails = () => {
