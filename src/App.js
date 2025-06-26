@@ -6,7 +6,6 @@ import AppFooter from './components/shared/AppFooter';
 import AppHeader from './components/shared/AppHeader';
 import './css/App.css';
 import UseScrollToTop from './hooks/useScrollToTop';
-import { HashLink } from 'react-router-hash-link';
 const About = lazy(() => import('./pages/AboutMe'));
 const Contact = lazy(() => import('./pages/Contact.jsx'));
 const Home = lazy(() => import('./pages/Home'));
@@ -25,10 +24,10 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               {/* <Route path="projects" element={<Projects />} /> */}
-              <Route
+              {/* <Route
                 path="projects/single-project"
                 element={<ProjectSingle />}
-              />
+              /> */}
 
               {/* <Route path="about" element={<About />} /> */}
               {/* <a href="#skills">

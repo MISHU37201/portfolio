@@ -34,12 +34,12 @@ export const ProjectsProvider = (props) => {
       value={{
         projects,
         setProjects,
-        searchProject,
-        setSearchProject,
-        searchProjectsByTitle,
-        selectProject,
-        setSelectProject,
-        selectProjectsByCategory,
+        // searchProject,
+        // setSearchProject,
+        // searchProjectsByTitle,
+        // selectProject,
+        // setSelectProject,
+        // selectProjectsByCategory,
       }}
     >
       {props.children}
