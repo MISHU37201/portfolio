@@ -30,7 +30,7 @@ function App() {
                 element={<ProjectSingle />}
               />
 
-              <Route path="about" element={<About />} />
+              {/* <Route path="about" element={<About />} /> */}
               {/* <a href="#skills">
                 Skills
               </a> */}

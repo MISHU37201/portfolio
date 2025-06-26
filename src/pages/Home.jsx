@@ -4,9 +4,10 @@ import ProjectsGrid from '../components/projects/ProjectsGrid';
 import { ProjectsProvider } from '../context/ProjectsContext';
 import Button from '../components/reusable/Button';
 import Skills from '../components/skill/Skills';
+import About from './AboutMe';
 
 const Home = () => {
-	return (
+  return (
     <div className="container mx-auto">
       <AppBanner></AppBanner>
 
@@ -14,8 +15,12 @@ const Home = () => {
 				<ProjectsGrid></ProjectsGrid>
 	</ProjectsProvider> */}
 
-      <section id="skill" className="scroll-mt-28">
+      <section id="skill" className="scroll-mt-28  mt-10 sm:mt-10">
         <Skills />
+      </section>
+
+      <section id="about" className="scroll-mt-28  mt-10 sm:mt-10">
+        <About />
       </section>
 
       {/* <div className="mt-8 sm:mt-10 flex justify-center">
