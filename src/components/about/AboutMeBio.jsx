@@ -6,7 +6,7 @@ const AboutMeBio = () => {
   const { aboutMe } = useContext(AboutMeContext);
 
   return (
-    <div className="w-full overflow-hidden bg-transparent">
+    <div className="w-full overflow-hidden bg-transparent mt-20">
       <h1 className="text-3xl font-bold mb-6 text-center text-primary-dark dark:text-primary-light">
         About Me
       </h1>

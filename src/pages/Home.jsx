@@ -5,6 +5,7 @@ import { ProjectsProvider } from '../context/ProjectsContext';
 import Button from '../components/reusable/Button';
 import Skills from '../components/skill/Skills';
 import About from './AboutMe';
+import Projects from './Projects';
 
 const Home = () => {
   return (
@@ -15,12 +16,16 @@ const Home = () => {
 				<ProjectsGrid></ProjectsGrid>
 	</ProjectsProvider> */}
 
+      <section id="about" className="scroll-mt-28  mt-10 sm:mt-10">
+        <About />
+      </section>
+
       <section id="skill" className="scroll-mt-28  mt-10 sm:mt-10">
         <Skills />
       </section>
 
-      <section id="about" className="scroll-mt-28  mt-10 sm:mt-10">
-        <About />
+      <section id="projects" className="scroll-mt-28  mt-10 sm:mt-10">
+        <Projects />
       </section>
 
       {/* <div className="mt-8 sm:mt-10 flex justify-center">
