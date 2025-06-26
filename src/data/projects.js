@@ -11,11 +11,11 @@ export const projectsData = [
     title: 'Motor Menders ',
     category: 'Web Application',
     img: WebImage1,
-    ProjectHeader: {
-      title: 'Project Management UI - From Context',
-      publishDate: 'Jul 26, 2021',
-      tags: 'UI / Frontend',
-    },
+    // ProjectHeader: {
+    //   title: 'Project Management UI - From Context',
+    //   publishDate: 'Jul 26, 2021',
+    //   tags: 'UI / Frontend',
+    // },
   },
   {
     id: 2,
