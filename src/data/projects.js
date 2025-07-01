@@ -1,10 +1,7 @@
 // Import images
 import WebImage1 from '../images/web-project-1.png';
-import MobileImage1 from '../images/mobile-project-1.jpg';
-import MobileImage2 from '../images/mobile-project-2.jpg';
-import UIImage1 from '../images/ui-project-1.jpg';
-import UIImage2 from '../images/ui-project-1.jpg';
 import fyntra from '../images/fyntra.JPG';
+import restaurant from '../images/restaurant.jpg';
 
 export const projectsData = [
   {
@@ -22,7 +19,7 @@ export const projectsData = [
     id: 2,
     title: 'Restaurant Management',
     category: 'Web Application',
-    img: MobileImage2,
+    img: restaurant,
   },
   {
     id: 3,
