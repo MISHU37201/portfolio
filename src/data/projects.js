@@ -9,11 +9,9 @@ export const projectsData = [
     title: 'Motor Menders ',
     category: 'Web Application',
     img: WebImage1,
-    // ProjectHeader: {
-    //   title: 'Project Management UI - From Context',
-    //   publishDate: 'Jul 26, 2021',
-    //   tags: 'UI / Frontend',
-    // },
+    description:
+      'A full-stack web application that allows users to find and hire mechanics online. The frontend is developed using React.js with CSS for styling, ensuring a responsive and user-friendly interface. The backend is powered by Python Flask, integrated with a MySQL database to manage user and mechanic data efficiently. The app includes features like user authentication, mechanic profiles, service booking, and request management.',
+    techStack: ['React.js', 'Python Flask', 'MySQL'],
   },
   {
     id: 2,
@@ -27,22 +25,4 @@ export const projectsData = [
     category: 'Web Application',
     img: fyntra,
   },
-  // {
-  //   id: 4,
-  //   title: 'Cloud Storage Platform',
-  //   category: 'UI/UX Design',
-  //   img: UIImage2,
-  // },
-  // {
-  //   id: 5,
-  //   title: 'React Social App',
-  //   category: 'Mobile Application',
-  //   img: MobileImage1,
-  // },
-  // {
-  //   id: 6,
-  //   title: 'Apple Design System',
-  //   category: 'Web Application',
-  //   img: WebImage1,
-  // },
 ];
