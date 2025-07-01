@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
-const ProjectSingle = ({ title, category, image, desc, techStack }) => {
+const ProjectSingle = ({ title, image, desc, techStack }) => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -25,19 +25,16 @@ const ProjectSingle = ({ title, category, image, desc, techStack }) => {
           <p className="font-general-medium text-lg md:text-xl text-ternary-dark dark:text-ternary-light mb-2">
             {title}
           </p>
-          <span className="text-lg text-ternary-dark dark:text-ternary-light">
-            {category}
-          </span>
 
           <span className="text-lg text-ternary-dark dark:text-ternary-light">
             {desc}
           </span>
 
-          <div className="flex flex-wrap gap-2 mt-3">
+          <div className="flex flex-wrap gap-3 mt-3">
             {techStack?.map((tech, index) => (
               <button
                 key={index}
-                className="text-sm px-3 py-1 rounded-full bg-blue-100 dark:text-white text-blue-700 dark:text-white font-medium shadow-sm hover:bg-blue-200 dark:hover:bg-blue-700 transition duration-200"
+                className="text-lg px-3 py-2 flex items-center justify-center align-item-center rounded-lg border border-blue-500 dark:border-black text-ternary-dark dark:text-ternary-light font-medium shadow-sm hover:bg-blue-200 dark:hover:bg-blue-700 transition duration-200"
                 disabled
               >
                 {tech}
