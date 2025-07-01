@@ -4,6 +4,7 @@ import MobileImage1 from '../images/mobile-project-1.jpg';
 import MobileImage2 from '../images/mobile-project-2.jpg';
 import UIImage1 from '../images/ui-project-1.jpg';
 import UIImage2 from '../images/ui-project-1.jpg';
+import fyntra from '../images/fyntra.JPG';
 
 export const projectsData = [
   {
@@ -27,7 +28,7 @@ export const projectsData = [
     id: 3,
     title: 'Fyntra',
     category: 'Web Application',
-    img: UIImage1,
+    img: fyntra,
   },
   // {
   //   id: 4,
