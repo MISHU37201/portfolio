@@ -7,6 +7,8 @@ import typescript from '../../assets/typescript.png';
 import canva from '../../assets/canva.png';
 import git from '../../assets/git.png';
 import javascript from '../../assets/javascript.png';
+import css from '../../assets/css.png';
+import html from '../../assets/html.png';
 
 const skills = [
   { name: 'Tailwind CSS', logo: tailwind },
@@ -17,6 +19,8 @@ const skills = [
   { name: 'Canva', logo: canva },
   { name: 'Git', logo: git },
   { name: 'JavaScript', logo: javascript },
+  { name: 'CSS', logo: css },
+  { name: 'HTML', logo: html },
 ];
 
 const SkillLogos = () => {
