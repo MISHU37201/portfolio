@@ -5,6 +5,7 @@ import {
   FiGlobe,
   FiInstagram,
   FiYoutube,
+  FiFacebook,
 } from 'react-icons/fi';
 import AppFooterCopyright from './AppFooterCopyright';
 
@@ -19,21 +20,21 @@ const socialLinks = [
     icon: <FiGithub />,
     url: 'https://github.com/MISHU37201',
   },
-    {
-      id: 3,
-      icon: <FiInstagram />,
-      url: 'https://instagram.com/rimu_saqlain',
-    },
+  {
+    id: 3,
+    icon: <FiInstagram />,
+    url: 'https://instagram.com/rimu_saqlain',
+  },
   {
     id: 4,
     icon: <FiLinkedin />,
     url: 'www.linkedin.com/in/rimsha-saqlain-968155295',
   },
-  //   {
-  //     id: 5,
-  //     icon: <FiYoutube />,
-  //     url: 'https://www.youtube.com/c/realstoman',
-  //   },
+  {
+    id: 5,
+    icon: <FiFacebook />,
+    url: 'https://www.facebook.com/profile.php?id=61554554534098',
+  },
 ];
 
 const AppFooter = () => {
