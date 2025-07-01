@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
 
 const ProjectSingle = ({ title, image, desc, techStack }) => {
   return (
@@ -12,29 +11,27 @@ const ProjectSingle = ({ title, image, desc, techStack }) => {
         delay: 0.15,
       }}
     >
-      {/* <Link to="/projects/single-project" aria-label="Single Project"> */}
-      <div className="rounded-xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-secondary-light dark:bg-ternary-dark">
-        <div>
-          <img
-            src={image}
-            className="rounded-t-xl border-none"
-            alt="Single Project"
-          />
-        </div>
-        <div className="text-center px-4 py-6">
+      <div className="h-full flex flex-col justify-between rounded-xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-secondary-light dark:bg-ternary-dark">
+        <img
+          src={image}
+          className="rounded-t-xl border-none w-full h-48 object-cover"
+          alt="Project"
+        />
+
+        <div className="flex flex-col flex-grow justify-between px-4 py-6 text-center">
           <p className="font-general-medium text-lg md:text-xl text-ternary-dark dark:text-ternary-light mb-2">
             {title}
           </p>
 
-          <span className="text-lg text-ternary-dark dark:text-ternary-light">
+          <p className="text-sm text-gray-700 dark:text-gray-300 mb-4">
             {desc}
-          </span>
+          </p>
 
-          <div className="flex flex-wrap gap-3 mt-3">
+          <div className="flex flex-wrap gap-2 justify-center mt-auto max-w-full">
             {techStack?.map((tech, index) => (
               <button
                 key={index}
-                className="text-lg px-3 py-2 flex items-center justify-center align-item-center rounded-lg border border-blue-500 dark:border-black text-ternary-dark dark:text-ternary-light font-medium shadow-sm hover:bg-blue-200 dark:hover:bg-blue-700 transition duration-200"
+                className="text-sm px-3 py-1.5 flex items-center justify-center rounded-lg border border-blue-500 dark:border-black text-ternary-dark dark:text-ternary-light font-medium shadow-sm hover:bg-blue-200 dark:hover:bg-blue-700 transition duration-200"
                 disabled
               >
                 {tech}
@@ -43,7 +40,6 @@ const ProjectSingle = ({ title, image, desc, techStack }) => {
           </div>
         </div>
       </div>
-      {/* </Link> */}
     </motion.div>
   );
 };
